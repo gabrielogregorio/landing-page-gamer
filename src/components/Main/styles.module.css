@@ -1,0 +1,73 @@
+/* Main */
+.main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 5rem 0;
+  overflow: hidden;
+}
+
+.main .presentation {
+  width: 60%;
+  z-index: 2;
+}
+
+.main .presentation h1 {
+  animation: slideLeft 0.7s ease-out;
+  font-size: 3.2rem;
+  color: #5533ff;
+}
+
+.main .presentation p {
+  animation: slideLeft 0.7s ease-out;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #444444;
+}
+
+.main > img {
+  animation: slideRight 2s ease-out;
+  position: absolute;
+  width: 25rem;
+  right: 0;
+  z-index: 1;
+}
+
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(calc(2rem * var(--i)));
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(calc(-2rem * var(--i)));
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .main .presentation {
+    width: 100%;
+  }
+
+  .main > img {
+    width: 70%;
+    opacity: 0.2;
+    bottom: 0;
+    left: 0;
+  }
+}
+
