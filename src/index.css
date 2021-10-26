@@ -1,3 +1,10 @@
+:root {
+  --max-width: 1200px;
+  --primary: #5533ff;
+  --secundary: #ff2277;
+  --alert: #dd6a0c;
+}
+
 * {
   margin: 0;
   padding: 0;

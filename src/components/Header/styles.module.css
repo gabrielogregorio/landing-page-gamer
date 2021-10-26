@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-} 
+}
 
 .header .logo {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: bolder;
-  background: linear-gradient(90deg, #ff2277, #dd6a0c);
+  background: linear-gradient(90deg, var(--secundary), var(--alert));
   -webkit-background-clip: text;
   color: transparent;
   flex: 1;
@@ -49,14 +49,14 @@
 }
 
 .header nav ul li a {
-  color: #5533ff;
+  color: var(--primary);
   padding: 0.5rem 0.9rem;
   text-decoration: none;
   border-radius: 1.3rem;
 }
 
 .header nav ul li a.active {
-  background: #5533ff;
+  background: var(--primary);
   color: white;
 }
 
@@ -84,7 +84,7 @@
   100% {
     opacity: 1;
     transform: translateY(0)
-  } 
+  }
 }
 
 

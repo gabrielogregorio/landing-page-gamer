@@ -13,7 +13,7 @@
 
 .cardSocial {
   animation: slideTop 0.8s ease-out;
-  background: #5533ff;
+  background: var(--primary);
   margin-left: .5rem;
   border-radius: 50%;
   padding: 1.2rem;
@@ -22,7 +22,7 @@
 }
 
 .cardSocial:hover {
-  background: #ff2277;
+  background: var(--secundary);
   transform: translateY(-1rem);
 }
 
