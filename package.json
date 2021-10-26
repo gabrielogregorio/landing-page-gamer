@@ -1,6 +1,6 @@
 {
   "name": "gamer",
-  "homepage": "/project",
+  "homepage": "/gamer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
